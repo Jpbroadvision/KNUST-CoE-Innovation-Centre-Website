@@ -2933,6 +2933,10 @@ mark,
     margin-bottom: 50px;
 }
 
+.post-01__details {
+    text-align: justify;
+}
+
 @media (min-width: 0) {
     .post-01__style-02 {
         margin-bottom: calc(4.16667vw + 50px);
@@ -2942,6 +2946,9 @@ mark,
 @media (min-width: 1200px) {
     .post-01__style-02 {
         margin-bottom: 100px;
+    }
+    .post-01__details {
+        text-align: justify;
     }
 }
 
