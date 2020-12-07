@@ -1,0 +1,19 @@
+name: Innovationcenter
+description: Innovation Center website
+type: theme
+core: 8.x
+libraries:
+  - innovationcenter/global-css
+  - innovationcenter/global-js
+stylesheets-remove:
+  - core/themes/stable/css/system/components/align.module.css
+  - core/themes/stable/css/views/views.module.css
+
+regions:
+  main_navigation: 'Main Navigation'
+  header: 'Header'
+  sidebar: 'Sidebar'
+  blog_content: 'Blog Content'
+  content: 'Main Content'
+  footer: 'Footer'
+  

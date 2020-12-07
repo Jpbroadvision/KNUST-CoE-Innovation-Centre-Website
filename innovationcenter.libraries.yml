@@ -1,0 +1,32 @@
+global-css:
+  css:
+    theme:
+      css/fonts/fontawesome/font-awesome.min.css: {}
+      css/animate/animate.min.css: {}
+      css/fonts/themify-icons/themify-icons.css: {}
+      css/bootstrap4/bootstrap-grid.min.css: {}
+      js/magnific-popup/magnific-popup.min.css: {}
+      js/owl.carousel/owl.carousel.css: {}
+      js/_jquery/jquery.min.css: {}
+      css/style.css: {}
+      
+
+global-js:
+  js:
+    js/jquery/jquery.min.js: {}
+    js/imagesloaded/imagesloaded.pkgd.js: {}
+    js/isotope-layout/isotope.pkgd.js: {}
+    js/jquery.countdown/jquery.countdown.min.js: {}
+    js/jquery.countTo/jquery.countTo.min.js: {}
+    js/jquery.countUp/jquery.countup.min.js: {}
+    js/jquery.matchHeight/jquery.matchHeight.min.js: {}
+    js/jquery.mb.ytplayer/jquery.mb.YTPlayer.min.js: {}
+    js/magnific-popup/jquery.magnific-popup.min.js: {}
+    js/masonry-layout/masonry.pkgd.js: {}
+    js/owl.carousel/owl.carousel.js: {}
+    js/jquery.waypoints/jquery.waypoints.min.js: {}
+    js/menu/menu.min.js: {}
+    js/smoothscroll/SmoothScroll.min.js: {}
+    js/main.js: {}
+  dependencies:
+    - core/jquery

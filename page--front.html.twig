@@ -1,0 +1,34 @@
+{# this a copy of the page from layout folder in templates #}
+
+{% include directory ~ '/partials/header.html.twig' %}
+
+<div class="md-content">
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+      {# <div class="layout-content"> #}
+      <div class="md-content">
+      {% include directory ~ '/partials/home--page.html.twig' %}
+        {# {{ page.content }} #}
+      </div>{# /.layout-content #}
+
+      
+        {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+
+
+    </main>
+</div>
+    {% if page.footer %}
+      {% include directory ~ '/partials/footer.html.twig' %}
+    {% endif %}
+
