@@ -45,22 +45,23 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div class="md-content" {{ attributes }}>
+    <div {{ attributes }}>
      
       {% for item in items %}
-        <div{{ item.attributes }}>{{ item.content }}</div>
+        <div{{ item.attributes }}><span><i class="fa fa-tags" aria-hidden="true"></i> {{ item.content }} </span></div>
       {% endfor %}
     </div>
   {% else %}
+  
     {% for item in items %}
-      <div class="md-content" {{ attributes }}>{{ item.content }}</div>
+      <div {{ attributes }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
-  <div class="md-content" {{ attributes }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+  <div  {{ attributes }}>
+    <div{{ title_attributes.addClass(title_classes) }}> <h4 class="comment-heading"> {{ label }}</h4></div>
     {% if multiple %}
-      <div class="md-content">
+      <div >
     {% endif %}
     {% for item in items %}
       <div{{ item.attributes }}>{{ item.content }}</div>
@@ -70,5 +71,4 @@
     {% endif %}
   </div>
 {% endif %}
-
 

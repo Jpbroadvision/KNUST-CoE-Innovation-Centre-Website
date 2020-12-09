@@ -1,16 +1,13 @@
-{# this a copy of the page from layout folder in templates #} {% include directory ~ '/partials/header.html.twig' %}
+{# this an image of the page from layout folder in templates #}
+ {% include directory ~ '/partials/header.html.twig' %}
 <!-- Content-->
 <div class="md-content">
-
     <!-- page-title -->
     {% include directory ~ '/partials/blog_breadcrumb.html.twig' %}
     <!-- End / page-title -->
-
-
     <!-- Section -->
     <section class="md-section">
         <div class="container">
-
             <!-- layout-blog sidebar-left -->
             <div class="layout-blog sidebar-left">
                 <div class="layout-blog__content">
@@ -18,23 +15,9 @@
                     <!--  -->
                     <div class="post-01__style-02 md-text-center">
                                 {{ page.content }}
-                        {# <div class="post-01__media">
-                            {{ node.field_add_media }}
-                        </div> #}
-                        {# <div>
-                            <ul class="post-01__categories">
-                                <li><a href="#">{{ field_post_tags }}</a></li>
-                            </ul> 
-                            <h2 class="post-01__title">{{ node.field_add_title.value }}</h2>
-                            <div class="post-01__time">{{ node.field_post_time_and_date.value }}</div>
-                            <div class="post-01__note">{{ node.field_user_name.value }}</div>
-
-                            <div class="post-01__details"></div>
-                        </div> #}
                     </div>
                     <!-- End /  -->
                 </div>
-                {% include directory ~ '/partials/blog_sidebar.html.twig' %}
             </div>
             <!-- End / layout-blog sidebar-left -->
 
@@ -43,6 +26,7 @@
     <!-- End / Section -->
 </div>
 <!-- End / Content-->
+
 {% if page.footer %} 
 {% include directory ~ '/partials/footer.html.twig' %}
  {% endif %}

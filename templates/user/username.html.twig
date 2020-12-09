@@ -23,7 +23,7 @@
  */
 #}
 {% if link_path -%}
-  <a{{ attributes }}>{{ name }}{{ extra }}</a>
+  <a{{ attributes }}><span><i class="fa fa-user" aria-hidden="true"></i> {{ name }}{{ extra }}</span></a>
 {%- else -%}
-  <span{{ attributes }}>{{ name }}{{ extra }}</span>
+  <span{{ attributes }}><i class="fa fa-user" aria-hidden="true"></i> {{ name }}{{ extra }}</span>
 {%- endif -%}
